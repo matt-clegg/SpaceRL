@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>0e06dfe7-6422-41dc-a5f3-459f44ed86a4</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>SpaceRL.Core</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="$(MSBuildThisFileDirectory)Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Creature.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\AssetStore.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\StoreItemNotFoundException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Input\Controls.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Input\DelayedInputManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Input\KeyEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainGame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scenes\BaseScene.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\Array2D.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\Direction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\Line.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\Point2D.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\Rng\GameRandom.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\Rng\IRandom.cs" />
+  </ItemGroup>
+</Project>
